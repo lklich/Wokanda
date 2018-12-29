@@ -5,8 +5,6 @@ body
 	font-family: sans-serif;
 }
 
-
-
 .header
 {
 	width: 100%;
@@ -389,7 +387,6 @@ body
 	height: 31px;
 }
 
-/*Style dla rich:tabpanel na wokandzie dla sal*/
 .rich-tab-bottom-line
 {
 	display: none;
