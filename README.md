@@ -34,28 +34,18 @@ Zawartość zmiennych w pliku config.php – każda linia musi kończyć się ś
 
 Parametr	opis	Możliwe wartości
 ini_set(‚display_errors’,0);	Czy wokanda ma wyświetlać błędy w przypadku wystąpienia błędu? Ustaw na 0, chyba, że są jakieś problemy i wymagane jest zebranie błędów dla programisty.	0 lub 1
-error_reporting(0); Czy zapisywać błędy w pliku log? Ustaw na 0, chyba, że są jakieś problemy i wymagane jest zebranie błędów dla programisty.	error_reporting(0);
-lub
-error_reporting(E_ALL);
+error_reporting(0); Czy zapisywać błędy w pliku log? Ustaw na 0, chyba, że są jakieś problemy i wymagane jest zebranie błędów dla programisty.	error_reporting(0); lub error_reporting(E_ALL);
 $jaki_sad	Nazwa sądu do wyświetlenia na wokandzie	$jaki_sad = ‚Nazwa sądu’;
 $czykarny	Czy pobierać wokandę dla wydziału karnego?	$czykarny=true;
-lub
-$czykarny=false;
-$czyrodzinny	Czy pobierać wokandę dla wydziału rodzinnego?	$czyrodzinny=true;
-lub
-$czyrodzinny=false;
-$czycywilny	Czy pobierać wokandę dla wydziału cywilnego?	$czycywilny=true;
-lub
-$czycywilny=false;
+lub $czykarny=false; 
+$czyrodzinny	Czy pobierać wokandę dla wydziału rodzinnego?	$czyrodzinny=true; lub $czyrodzinny=false;
+$czycywilny	Czy pobierać wokandę dla wydziału cywilnego?	$czycywilny=true; lub $czycywilny=false;
 $czyzbiorcza	Czy wyświetlać wokandę zbiorczą?	$czyzbiorcza=true;
-$temida_image	Obrazek wyświetlany na wokandzie w przypadku braku wokand na dzień.	‚img/temida2.png’;
-‚img/temida3.jpg’;
-‚img/temida4.png’;
-lub można wgrać w do katalogu img dowolny obrazek lub też podać link zewnętrzny.
+$temida_image	Obrazek wyświetlany na wokandzie w przypadku braku wokand na dzień.	‚img/temida2.png’; ‚img/temida3.jpg’;‚img/temida4.png’; lub można wgrać w do katalogu img dowolny obrazek lub też podać link zewnętrzny.
 $defaultrowperpagespge	Domyślna ilość wierszy (rekordów) na wokandzie wspólna. Zalecane 4, gdyż w dalszej części można dobierać indywidualnie dla każdego wydziału.	Zalecane 4
-$odswiezanie_zbiorcza	Interwał odświeżania wokandy zbiorczeji jednocześnie POBIERANIA DANYCH Z SAWY dla innych wokand. Czas podawany w milisekundach	500 lub w zależności od upodobań
+$odswiezanie_zbiorcza	Interwał odświeżania wokandy zbiorczeji jednocześnie POBIERANIA DANYCH Z SAWY dla innych wokand. Czas podawany w milisekundach	500 lub w zależności od upodobań.
 $odswiezanie	Interwał pobierania danych z bazy wokanda, tabela wokanda. Nie należy wstawiać zbyt małej wartości, ponieważ może to zaburzyć pracę paginacji wokandy.	240 lub w zależności od upodobań.
-$defaultrowperpagespge_kar	Ilość rekordów (pozycji sesji w jednej paginacji) na wokandzie karnej.	4 lub 5 lub więcej – należy dobrać tak, by mieściło się na wokandzie. Lepiej dać mniej, ponieważ w przypadku większej ilości stron, może nie mieścić się na wokandzie.
+$defaultrowperpagespge_kar	Ilość rekordów (pozycji sesji w jednej paginacji) na wokandzie karnej.	4 lub 5 lub więcej – należy dobrać tak, by mieściło się na wokandzie. Lepiej dać mniej, ponieważ w przypadku większej ilości stron, może nie mieścić się na wokandzie. 
 $defaultrowperpagespge_cyw	Ilość rekordów (pozycji sesji w jednej paginacji) na wokandzie cywilnej.	3 lub 4 – należy dobrać tak, by wszystko mieściło się na wokandzie. Lepiej dać mniej, ponieważ w przypadku większej ilości stron, co ma miejsce w wydziale cywilnym, zawartość może nie mieścić się na wokandzie.
 $defaultrowperpagespge_rodz	Ilość rekordów (pozycji sesji w jednej paginacji) na wokandzie rodzinny.	4 lub 5 lub więcej – należy dobrać tak, by mieściło się na wokandzie. Lepiej dać mniej, ponieważ w przypadku większej ilości stron, może nie mieścić się na wokandzie.
 $karny_przedmiot	Czy wyświetlać przedmiot rozprawy na wokandzie karnej?	Zalecane false, ze względu na ochronę danych.
