@@ -1,0 +1,1 @@
+C:\php\php.exe C:\inetpub\wok2\get.php
